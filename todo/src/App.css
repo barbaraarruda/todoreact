@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 body {
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
   padding: 30px;
   color: rgb(3, 0, 0);
   background-color: #1d1c53;
-  background-image: url("./img/bg.png");
+  background-image: url("./img/897.jpg");
+  background-position: cover;
 }
 
 .app {
   max-width: 600px;
   margin: 0 auto 300px;
-  background-color: rgba(216, 112, 147, 0.705);
+  background-color: rgb(167, 187, 231);
   padding: 0.5rem 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px pink;
+  box-shadow: 5px 5px 5px rgb(142, 212, 209);
 }
 
 h1{
   text-align: center;
+  color: white;
   
 }
 h2{
   margin-bottom: 10px;
+  color: white;
 }
 p{
   margin: 10px 0;
@@ -29,7 +33,7 @@ input{
   box-sizing: border-box;
 }
 button{
-  background-color: #161e64;
+  background-color: rgb(1, 42, 129);
   color: #fff;
   padding: 5px 10px;
   margin-right: 10px;
@@ -41,7 +45,7 @@ button{
 }
 button:hover{
   opacity: 0.8;
-  background-color: rgb(2, 78, 78);
+  background-color: rgb(10, 107, 197);
 }
 .todo-list{
   margin-bottom: 20px;
@@ -59,13 +63,13 @@ button:hover{
   align-items: center;
 }
 .complete{
-  background-color: rgb(137, 43, 226);
+  background-color: rgb(1, 42, 129);
 }
 .complete:hover{
   background-color: rgb(34, 192, 118);
 }
 .remove {
-  background-color: rgb(137, 43, 226);
+  background-color: rgb(1, 42, 129);
 }
 .remove:hover{
   background-color: rgb(255, 0, 0);
@@ -77,8 +81,22 @@ input[type="text"],
 select{
   padding: 5px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 3px;
   width: 100%;
   background-color: aliceblue;
+}
+.filter, 
+.search{
+  border-bottom: 1px solid #5555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.filter-options div{
+  flex: 1 1 0;
 }
